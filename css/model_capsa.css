@@ -1,0 +1,18 @@
+div{
+    padding: 15px;
+    border: 1px solid black;
+    width: 40%;
+    float: left;
+}
+
+.borde_rojo{
+    border: 1px solid red;
+}
+
+span{
+    border: 1px solid black;
+}
+
+.derecha{
+    float: right;
+}
