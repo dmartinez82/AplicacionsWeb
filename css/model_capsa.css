@@ -2,6 +2,7 @@ div{
     padding: 15px;
     border: 1px solid black;
     width: 40%;
+    position: relative;
     float: left;
 }
 
@@ -9,10 +10,23 @@ div{
     border: 1px solid red;
 }
 
-span{
-    border: 1px solid black;
-}
-
 .derecha{
     float: right;
+}
+
+span{
+    display: inline-block;
+    border: 1px solid black;
+    position: relative;
+    width: 40%;
+}
+
+span:nth-of-type(2n){
+    float: right;
+}
+
+.absoluto{
+    position: absolute;
+    right: 30px;
+    top: 120px;
 }
