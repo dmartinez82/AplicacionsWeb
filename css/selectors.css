@@ -1,38 +1,94 @@
 /* dona al <body> element un color de fons de #bdc3c7 */
+body{
+    background-color: #bdc3c7;
+}
 
 /* fes que els <h1> siguin de color #9b59b6 */
+h1{
+    color: #9b59b6;
+}
 
 /* fes que els <h2> siguin de color orange */
+h2{
+    color: orange;
+}
 
 /* fes que els <li> siguin d'un blau hexadecimal */
+li{
+    color: #42F;
+}
 
 /*canvia el color de fons de cada paràgraf a groc */
+div{
+    background-color: yellow;
+}
 
 /*fes que tots els inputs tinguin un border de 3px vermell */
+input{
+    border: 3px solid red;
+}
 
 /* fes que tot el que té class 'hello' sigui de fons blanc */
+.hello{
+    background-color: white;
+}
 
 /* fes que l'element amb id 'special' tingui un border 2px solid blau (selecciona el teu propi rgb blau) */
+#special{
+    border: 2px solid rgb(68, 34, 255);
+}
 
 /*Fes que tots els <p> que estiguin dins un div tingin una font de 25px (font-size: 25px) */
+div p{
+    font-size: 25px;
+}
 
 /*Fes que només els inputs de type text tenguin un fons gris */
+input[type=text]{
+    background-color:gray;
+}
 
 /* Fes que els <p> dins el 3r <div> tinguin fons rosa */
+div:nth-of-type(3) p{
+    background-color: lightpink;
+}
 
 /* Fes que el 2n <p> dins el  3r  <div> tingui un border de 5px blanc */
+div:nth-of-type(3) p:nth-of-type(2){
+    border: 5px solid white;
+}
 
 /* Fen que l'element <em> del 3r <div> sigui blanc amb una font de 20px (font-size:20px) */
+div:nth-of-type(3) em{
+    color: white;
+    font-size: 20px;
+}
 
 /*****************************/
 /************BONUS************/
 /*****************************/
 /* Fes que tots el "checked" checkboxes tinguin un marge esquerra de 50px (margin-left: 50px) */
+input:checked{
+    margin-left: 50px;
+ }
 
 /* Fes que l'etiqueta <label> siguin tots UPPERCASE sense canviar el HTML */
+label{
+    text-transform: uppercase;
+}
 
 /* Fes que la primera lletra de l'element amb id 'special' sigui verda i amb font de 100px font size(font-size: 100) */
+#special::first-letter{
+    color: green;
+    font-size: 100px;
+}
 
 /* Fes que el color de font del <h1> canviï a blau quan el ratolí passi per damunt */
+h1:hover{
+    color: blue;
+}
 
 /* Fes que els <a> que hagin estat visitats siguin de color gris */
+a:visited{
+    color: gray;
+}
