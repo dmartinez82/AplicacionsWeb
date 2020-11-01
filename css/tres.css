@@ -1,0 +1,57 @@
+/** Todo centrado **/
+*{
+    text-align:     center;
+    margin-left:    auto;
+    margin-right:   auto;
+}
+
+/** Celdas cuadradas de 150x150 **/
+td{
+    width:  150px;
+    height: 150px;
+}
+
+/** Si tiene class, le ponemos estilo de borde**/
+td[class]{
+    border-color: black;
+    border-width:   3px;
+}
+
+/** Le damos estilo de borde correspondiente **/
+.derecha{   border-right-style:     solid; }
+
+.izquierda{ border-left-style:      solid; } 
+
+.arriba{    border-top-style:       solid; }
+
+.abajo{     border-bottom-style:    solid; }
+
+/**********************/
+/******* EXTRAS *******/
+/**********************/
+td:hover{
+    transition: background-color 0.8s;
+    cursor: move;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@600&display=swap');
+h1{
+    font-family: 'Grandstander', cursive;
+}
+
+h1::first-letter{
+    font-size: larger;
+}
+
+td:nth-of-type(n):hover{
+    background-color: red;
+}
+
+td:nth-of-type(2n):hover{
+    background-color: green;
+}
+
+td:nth-of-type(3n):hover{
+    background-color: blue;
+}
+
