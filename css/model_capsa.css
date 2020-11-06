@@ -14,7 +14,7 @@ div{
     float: right;
 }
 .alto{
-    height: 150px;
+    height: 250px;
 }
 
 span{
@@ -28,9 +28,14 @@ span:nth-of-type(2n){
     float: right;
 }
 
-
 .esquina{
     position: absolute;
     right: 15px;
     bottom: 15px;
+}
+
+.centrado_horizontal{
+    float: unset; /* Como hereda el float:left del selector "div" hay que quitarselo aquí */
+    margin: 0 auto; /* centra el element */ 
+    text-align: center; /* afecta al interior del componente */
 }
