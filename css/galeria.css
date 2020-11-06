@@ -48,3 +48,7 @@ img:hover{
     position: relative;
     float: left;
 }
+
+a{
+    text-decoration: none; /* Quitamos subrayado del enlace*/
+}
