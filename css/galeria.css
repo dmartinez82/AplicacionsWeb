@@ -26,25 +26,25 @@ img{
 /**********************/
 /******* EXTRAS *******/
 /**********************/
-img{
+img{ /* borde redondeado para las imágenes */ 
     border-radius: 10px;
 }
 
-img:hover{
+img:hover{ /* cuando pasamos por encima de una imagen, se pone "transparente" */ 
     opacity: 0.5;
     transition: 0.3s;
 }
 
-#footer{
+#footer{ /* contenedor pie de página*/
     padding: 25px 50px 50px 50px ;
 }
 
-.copyright{
+.copyright{ /* Colocamos el texto de Copyright a la derecha */ 
     position: relative;
     float: right;
 }
 
-.torna{
+.torna{ /* Colocamos el enlace "torna a la izquierda*/ 
     position: relative;
     float: left;
 }
