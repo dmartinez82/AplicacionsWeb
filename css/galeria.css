@@ -28,11 +28,11 @@ img{
 /**********************/
 img{ /* borde redondeado para las imágenes */ 
     border-radius: 10px;
+    transition: 0.5s;
 }
 
 img:hover{ /* cuando pasamos por encima de una imagen, se pone "transparente" */ 
     opacity: 0.5;
-    transition: 0.3s;
 }
 
 #footer{ /* contenedor pie de página*/
