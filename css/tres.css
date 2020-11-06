@@ -9,10 +9,6 @@
 td{
     width:  150px;
     height: 150px;
-}
-
-/** Si tiene class, le ponemos estilo de borde**/
-td[class]{
     border-color: black;
     border-width:   3px;
 }
