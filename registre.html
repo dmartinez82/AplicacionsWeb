@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari de registre</title>
+</head>
+<body>
+
+    <h1>Exercici, formulari de registre</h1>
+
+    <form action="registre.html" method="GET">
+        
+        <label for="nom"> Nom: </label>
+        <input id="nom" type="text" name="nom" required 
+            placeholder="Introdueix el teu nom" size="20" maxlength="20" value="Daniel">
+
+        <label for="llinatges"> Llinatges: </label>
+        <input id="llinatges" type="text" name="llinatges" required 
+            placeholder="Introdueix els teus llinatges" size="40" maxlength="40">
+
+        <br>
+
+        <label>Sexe:</label>
+        <label for="home">Home</label>
+        <input type="radio" id="home" name="sexe" value="H">
+        <label for="dona">Dona</label>
+        <input type="radio" id="dona" name="sexe" value="D">
+        <label for="altres">Altres</label>
+        <input type="radio" id="altres" name="sexe" value="A">
+
+        <br>
+
+        <label for="email"> Email: </label>
+        <input id="email" type="email" name="email" required 
+            placeholder="Introdueix el teu mail" size="20" maxlength="50">
+
+        <label for="password"> Password: </label>
+        <input id="password" type="password" name="password" required 
+            placeholder="Màxim 8" size="10" maxlength="8">
+
+        <br>
+
+        <label for="dataNaix"> Data Naixement: </label>
+        <input id="dataNaix" type="date" name="dataNaix" required>
+
+        <br>
+
+        <label for="acord">Estic d'acord amb els termes i condicions</label>
+        <input id="acord" type="checkbox" name="acord" required value="S">
+
+        <input type="submit">
+
+    </form>
+    
+</body>
+</html>
