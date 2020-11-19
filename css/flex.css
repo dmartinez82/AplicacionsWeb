@@ -1,32 +1,34 @@
-.flex-container{
+.contenedor{
     display: flex;
-    background-color: burlywood;
-    padding: 10px;
-    border: 2px solid black;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    height: 600px;
-
+    justify-content: space-between;
+    height: 88vh;
+    align-items: center;
 }
 
-.flex-container div{
-    background-color: gainsboro;
+.izquierda, .derecha{
+    display: flex;
+    flex-direction: column;
+}
+
+.caja{
+    border: 1px solid red;
     width: 100px;
-    margin: 10px;
+    height: 100px;
     text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-    border: 2px solid black;
-    order: 2;
-    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 1%;
+}
+.footer{
+    height: 8vh;
+    text-align: center;
 }
 
-#div5{
-    order: 1;
-}
-
-#div10{
-    flex-grow: 5;
+body{
+    margin: 0;
+    width: 99.9%; /* per que no desbordi*/
 }
