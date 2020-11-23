@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --color_fons: burlywood;
+    --fons_botons: lightblue;
+    --color_icones: blueviolet;
+}
+
+body{
+    background-color: var(--color_fons);
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+nav a:hover{
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.logo{
+    flex-grow: 2;
+}
+
+.divIcono{
+    flex-grow: 1;
+}
+
+.logo img {
+    margin-top: 10%;
+    width: 50%;
+}
+
+.contingut{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    opacity: 0.8;
+    height: 90vh;
+}
+
+.background{
+    background-image: url('../img/portada.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.marge_top{
+    margin-top: 25vh;
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+}
+
+h1{
+    color: black;
+    font-weight: bolder;
+}
+
+.button a{
+    text-decoration: none;
+    color: var(--color_icones);
+    border-radius: 10px;
+    border: 2px solid var(--color_icones);
+    padding: 10px 40px;
+    background-color:var(--fons_botons);
+}
+
+.button a:hover{
+    color: white;
+}
+
+.footer{
+    font-style: italic;
+    width: 100%;
+    text-align: right;
+    padding: 3vh;
+}
+
+.galeria{
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.formulari{
+    width: 60%;
+}
+
+.formulari div{
+    margin: 3%;
+}
+
+.galeria a{ 
+    width: 45%;
+    margin-bottom: 1%;
+}
+
+.galeria img{ 
+    width: 95%;
+}
+
+.formulari{
+    text-align: center;
+}
+
+input[type='submit']{
+    margin-top: 15px;;
+}
+
+.bannerReserva{
+    margin: 0 auto;
+    width: 80%;
+    height: 100px;
+}
