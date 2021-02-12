@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulari de registre</title>
+    <script src="./js/formulario.js"></script>
 </head>
 <body>
 
@@ -52,6 +53,46 @@
         <input type="submit">
 
     </form>
+
+    <br/>
+    
+    <script>
+        var primero = 5;
+        var segundo = 7;
+
+        var texto = "El resultado es ";
+
+
+        var resultado = primero + segundo;
+
+        if (resultado > 10){
+            document.write('Es mayor que 10.');
+        }
+
+        for (var j = primero; j <= segundo; j++) {
+            document.write(j + '<br/>');
+        }
+
+        document.write(texto + resultado +".");
+        document.write('<br/>');
+        document.write('<br/>');
+
+        var cars = ["Saab", "Volvo", "BMW", "Mazda"]; //Esto es un Array
+
+        if (resultado > 10) cars.push("KIA");
+
+        for (var k = cars.length-1; k>=0 ; k--) {
+            document.write(cars[k]);
+            document.write('<br/>');
+        }
+
+        document.write('<br/>');
+
+        var person = {firstName:"John", lastName:"Doe", age:46};
+        document.write(person.age);
+
+
+    </script>
     
 </body>
 </html>
