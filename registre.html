@@ -8,27 +8,41 @@
 </head>
 <body>
 
+    <br>
+    
+    <button onclick="muestra_password()">HACKER!</button>
+
+    <button onclick="colores()">CAMBIAR FONDO NOMBRE/APELLIDO</button>
+
     <h1>Exercici, formulari de registre</h1>
 
     <form action="registre.html" method="GET">
         
         <label for="nom"> Nom: </label>
-        <input id="nom" type="text" name="nom" required 
+        <input id="nom" type="text" name="nom" required class="nombre"
             placeholder="Introdueix el teu nom" size="20" maxlength="20" value="Daniel">
 
         <label for="llinatges"> Llinatges: </label>
-        <input id="llinatges" type="text" name="llinatges" required 
+        <input id="llinatges" type="text" name="llinatges" required class="nombre"
             placeholder="Introdueix els teus llinatges" size="40" maxlength="40">
+
+        <br>
+
 
         <br>
 
         <label>Sexe:</label>
         <label for="home">Home</label>
-        <input type="radio" id="home" name="sexe" value="H">
+        <input type="radio" id="home" name="sexe" value="H" onclick="muestra_altres(false)">
         <label for="dona">Dona</label>
-        <input type="radio" id="dona" name="sexe" value="D">
+        <input type="radio" id="dona" name="sexe" value="D" onclick="muestra_altres(false)">
         <label for="altres">Altres</label>
-        <input type="radio" id="altres" name="sexe" value="A">
+        <input type="radio" id="altres" name="sexe" value="A" onclick="muestra_altres(true)">
+
+        <select name="sel_altres" id="sel_altres" style="display: none;">
+            <option value="0">NB/SC</option>
+            <option value="1">NO BINARIO</option>            
+        </select>
 
         <br>
 
@@ -56,43 +70,7 @@
 
     <br/>
     
-    <script>
-        var primero = 5;
-        var segundo = 7;
 
-        var texto = "El resultado es ";
-
-
-        var resultado = primero + segundo;
-
-        if (resultado > 10){
-            document.write('Es mayor que 10.');
-        }
-
-        for (var j = primero; j <= segundo; j++) {
-            document.write(j + '<br/>');
-        }
-
-        document.write(texto + resultado +".");
-        document.write('<br/>');
-        document.write('<br/>');
-
-        var cars = ["Saab", "Volvo", "BMW", "Mazda"]; //Esto es un Array
-
-        if (resultado > 10) cars.push("KIA");
-
-        for (var k = cars.length-1; k>=0 ; k--) {
-            document.write(cars[k]);
-            document.write('<br/>');
-        }
-
-        document.write('<br/>');
-
-        var person = {firstName:"John", lastName:"Doe", age:46};
-        document.write(person.age);
-
-
-    </script>
     
 </body>
 </html>
